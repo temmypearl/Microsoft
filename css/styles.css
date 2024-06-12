@@ -85,7 +85,8 @@ ul{
    display: grid;
    grid-template-columns:repeat(4,1fr);
    grid-gap: 30px;
-   padding: 70px;
+   padding: 70px 50px 40px 50px; 
+   
  }
  .card{
    box-shadow: 0px 10px 10px rgb(220,220,220);
@@ -96,18 +97,18 @@ ul{
    padding-left: 30px;
  }
  .home-card img{
-   width: 100%;
+   width: 24vw;
  }
  .home-card h2{
    margin-top: 20px;
    margin-bottom: 5px;
    text-align: left;
-   font-size: 1.6rem;
+   font-size: 1.8rem;
    font-weight: 600;
  }
  .home-card p{
    display: block; 
-   font-size: 16px;
+   font-size: 1.1rem;
    font-weight: 400;
    line-height: 1.6;
  }
@@ -139,4 +140,118 @@ ul{
  .outlook p{
    margin-bottom: 20px;
    font-size: 1.2rem;
+ }
+.outlook a{
+   text-decoration: none;
+   background-color:#0067b8;
+   color: #fff;
+   padding: 0.5rem; 
+   margin-bottom: 3rem;
+   font-size: 1.2rem;
+   font-weight: 600;
+   border-radius: 0.2rem;
+}
+.homebtn1 a{
+   position: absolute;
+   bottom: 1rem;
+   display: inline-block;
+   background-color:#0067b8;
+   text-decoration: none;
+   color: #fff;
+   padding: 0.8rem 0.8rem 0.8rem 1rem;
+   border-radius: 0.2rem;
+   font-weight:600;
+   font-size: 1rem;
+ }
+ /*FOLLOW*/
+ .follow{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   margin-left: 50px;
+ }
+ .follow p{
+   font-size: 1.2rem;
+ }
+ /*LINKS*/
+ .link{
+   background-color: #f2f2f2;
+   color: #616161;
+   font-size: 1rem;
+   padding: 2.2rem 0;
+ }
+ .link-inner{
+   max-width: 68rem;
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+   margin: 0 auto;
+   padding: 0 1.3rem;
+   grid-gap: 1rem;
+   align-items: flex-start;
+   justify-content: center; 
+ }
+ .link li{
+   line-height: 2.8;
+ }
+ .link a{
+   text-decoration: none;
+   color: #000;
+   font-size: 0.9rem;
+ }
+ .link a:hover{
+   text-decoration: underline;
+ }
+ /*FOOTER*/
+ .main-footer{
+    background-color:#f2f2f2;
+    color: #616161;
+    font-size: 0.8rem;
+    padding: 20px 0;
+ }
+ .main-footer div{
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+ }
+ .main-footer div i{
+   margin-right: 10px;
+ }
+ .main-footer div i:hover{
+   text-decoration: underline;
+ }
+ .footer-inner{
+   max-width: 68rem;
+   margin: 0 auto;
+   padding: 0 1.2rem 0 1.2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+ .main-footer ul{
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .main-footer li{
+   margin-right: 1.8rem;
+   margin-bottom: 1.3rem;
+ }
+ .main-footer a{
+   text-decoration: none;
+   color: #000;
+ }
+ .main-footer a:hover{
+   text-decoration: underline;
+   color: #000;
+ }
+
+
+
+ @media (max-width:268px){
+   .home-card{
+      grid-template-columns: repeat(2,1fr);
+   }
+   .link .link-inner{
+      grid-template-columns: repeat(2,1fr);
+
+   }
  }
