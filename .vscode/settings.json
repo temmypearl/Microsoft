@@ -3,5 +3,6 @@
     "liveServer.settings.fullReload": true,
     "fiveServer.browser": [
         
-    ]
+    ],
+    "fiveServer.port": 3000
 }
